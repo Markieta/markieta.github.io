@@ -1,0 +1,16 @@
+#navbar-top {
+  margin: 0;
+  border-radius: 0;
+}
+
+#header-home {
+  background: LightSeaGreen;
+  margin: 0;
+  padding: 6em;
+}
+
+#header-name {
+  font-size: 4em;
+  color: white;
+  margin: 0;
+}
