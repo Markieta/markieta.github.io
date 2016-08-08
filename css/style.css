@@ -1,3 +1,7 @@
+#navbar-top, #footer-home {
+  background: #242729;
+}
+
 #navbar-top {
   margin: 0;
   border-radius: 0;
@@ -7,6 +11,21 @@
   background: LightSeaGreen;
   margin: 0;
   padding: 6em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3em;
+}
+
+#footer-home p {
+  color: #9fa6ad;
+}
+
+#footer-home h6 {
+  color: white;
 }
 
 #header-name {
