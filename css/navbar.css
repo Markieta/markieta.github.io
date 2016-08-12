@@ -1,0 +1,92 @@
+.navbar-custom {
+  background-color: #242729;
+  margin: 0;
+  border-radius: 0;
+}
+.navbar-custom .navbar-brand {
+  color: #FFF;
+  border-radius: 25%;
+  transition: all .3s ease-in-out;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #20B2AA;
+}
+.navbar-custom .navbar-text {
+  color: #FFF;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #FFF;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #20B2AA;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu {
+  background-color: #242729;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a {
+  color: #FFF;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #20B2AA;
+  background-color: #FFF;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #FFF;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #20B2AA;
+  background-color: #FFF;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #20B2AA;
+  background-color: #FFF;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: #20B2AA;
+  background-color: #FFF;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #FFF;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #FFF;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #FFF;
+}
+.navbar-custom .navbar-link {
+  color: #FFF;
+}
+.navbar-custom .navbar-link:hover {
+  color: #20B2AA;
+}
+
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #20B2AA;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #20B2AA;
+    background-color: #FFF;
+  }
+}

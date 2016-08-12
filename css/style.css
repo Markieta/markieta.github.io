@@ -1,16 +1,19 @@
-#navbar-top, #footer-home {
+@import url(navbar.css);
+
+#footer-home {
   background: #242729;
 }
 
-#navbar-top {
-  margin: 0;
-  border-radius: 0;
-}
-
 #header-home {
-  background: LightSeaGreen;
+  background: #20B2AA;
   margin: 0;
   padding: 6em;
+}
+
+#header-name {
+  font-size: 4em;
+  color: #FFF;
+  margin: 0;
 }
 
 .footer {
@@ -20,17 +23,21 @@
   padding: 3em;
 }
 
-#footer-home p {
-  color: #9fa6ad;
+.btn-social {
+  display: inline-block;
+  color: #FFF;
+  border: 0.1em solid #FFF;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.425em;
+  line-height: 2.4em;
+  width: 2.5em;
+  height: 2.5em;
+  transition: all .3s ease-in-out;
 }
 
-#footer-home h6 {
-  color: white;
-}
-
-#header-name {
-  font-size: 4em;
-  color: white;
-  margin: 0;
+a:active, a:focus, a:hover {
+  color: #20B2AA;
+  background: #FFF;
 }
 
