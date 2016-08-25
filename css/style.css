@@ -7,7 +7,7 @@
 #header-home {
   background: #20B2AA;
   margin: 0;
-  padding: 6em;
+  padding: 6em 0;
 }
 
 #header-name {
@@ -20,7 +20,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 3em;
+  padding: 1em 0;
 }
 
 .btn-social {
@@ -41,3 +41,20 @@ a:active, a:focus, a:hover {
   background: #FFF;
 }
 
+/* Phones and Tablets */
+@media screen and (max-width: 800px) {
+  #header-home {
+    padding: 16vw 0;
+  }
+  #header-name {
+    font-size: 10vw;
+  }
+
+  .btn-social {
+    border: 0.7vw solid #FFF;
+    font-size: 5vw;
+    line-height: 9vw;
+    width: 10vw;
+    height: 10vw;
+  }
+}
