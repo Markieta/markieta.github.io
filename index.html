@@ -5,53 +5,16 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<nav class="navbar navbar-custom" id="navbar-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/portfolio/">
-        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-      </a>
-    </div>
-  </div>
-</nav>
+<script>
+window.onload = function() {
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+}
+</script> 
+<div id="header"></div>
 <header class="page-header text-center" id="header-home">
   <h1 id="header-name">Christopher Markieta</h1>
 </header>
-<footer class="footer text-center" id="footer-home">
-  <div class="container">
-    <ul class="list-inline">
-      <li>
-        <a href="https://github.com/Markieta" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-github"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://bitbucket.org/ChrisMarkieta" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-bitbucket"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/christopher-markieta-6a518555" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-linkedin"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://plus.google.com/113455185541568395908" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-google-plus"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/christopher.markieta" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-facebook"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/ChrisMarkieta" target="_blank" class="btn-social">
-          <span class="fa fa-fw fa-twitter"></span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+<div id="footer"></div>
