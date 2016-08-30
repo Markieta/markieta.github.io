@@ -22,9 +22,18 @@
   padding: 1em 0;
 }
 
+a {
+  color: #FFF;
+  transition: all .3s ease-in-out;
+}
+
+a:active, a:focus, a:hover, .btn.focus, .btn:focus, .btn:hover {
+  color: #20B2AA;
+  background: #FFF;
+}
+
 .btn-social {
   display: inline-block;
-  color: #FFF;
   border: 0.1em solid #FFF;
   border-radius: 100%;
   text-align: center;
@@ -32,12 +41,6 @@
   line-height: 2.4em;
   width: 2.5em;
   height: 2.5em;
-  transition: all .3s ease-in-out;
-}
-
-a:active, a:focus, a:hover {
-  color: #20B2AA;
-  background: #FFF;
 }
 
 /* Phones and Tablets */
