@@ -5,7 +5,6 @@
 }
 .navbar-custom .navbar-brand {
   color: #FFF;
-  border-radius: 25%;
   transition: all .3s ease-in-out;
 }
 .navbar-custom .navbar-brand:hover,
