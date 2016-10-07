@@ -17,8 +17,8 @@
 /* ---- grid-item ---- */
 
 .grid-item {
-  width: 160px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   float: left;
   background: #D26;
   border: 2px solid #333;
@@ -26,20 +26,40 @@
   border-radius: 5px;
 }
 
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
+.grid-item--width2 { width: 400px; }
+.grid-item--width3 { width: 800px; }
 
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+.grid-item--height2 { height: 400px; }
+.grid-item--height3 { height: 800px; }
 
 .grid-item img {
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .grid-item:hover img {
-    opacity: .5;
+  opacity: .5;
+}
+
+body {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, black, maroon); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, black, maroon); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, black, maroon); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, black, maroon); /* Standard syntax */
+}
+
+/* Phones and Tablets */
+@media screen and (max-width: 800px) {
+  .grid-item {
+    width: 25vw;
+    height: 25vw;
+  }
+  
+  .grid-item--width2 { width: 50vw; }
+  .grid-item--width3 { width: 100vw; }
+  
+  .grid-item--height2 { height: 50vw; }
+  .grid-item--height3 { height: 100vw; }
 }
