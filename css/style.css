@@ -49,6 +49,21 @@ a:active, a:focus, a:hover, .btn.focus, .btn:focus, .btn:hover {
   margin: 0 auto;
 }
 
+section:nth-child(even) {
+  background: #20B2AA;
+}
+
+#education {
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em;
+  background: #DA291C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #DA291C, #FFF, #002A5C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #DA291C, #FFF, #002A5C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #DA291C, #FFF, #002A5C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom #DA291C, #FFF, #002A5C); /* Standard syntax (must be last) */
+}
+
 /* Phones and Tablets */
 @media screen and (max-width: 800px) {
   #header-home {
@@ -70,5 +85,9 @@ a:active, a:focus, a:hover, .btn.focus, .btn:focus, .btn:hover {
   #youtube {
     width: 100%;
     height: 56.25vw;
+  }
+
+  #education {
+    font-size: 2.5vw;
   }
 }
