@@ -62,7 +62,7 @@ td, th {
   }
 
   table {
-    font-size: 3.5vw !important;
+    font-size: 3vw !important;
   }
 
   th, td {
@@ -71,7 +71,7 @@ td, th {
   }
 
   .message {
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding: 4vw;
   }
 }
