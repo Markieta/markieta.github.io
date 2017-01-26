@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<title>Timetable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/table.min.css">
+<link rel="stylesheet" href="/css/timetable.css">
+<script>
+var uli101q = document.getElementsByClassName("uli101q");
+var uli101r = document.getElementsByClassName("uli101r");
+var ops235d = document.getElementsByClassName("ops235d");
+var office = document.getElementsByClassName("office");
+
+function highlight(color, elms) {
+    for(var i = 0; i < uli101q.length; i++) {
+        uli101q[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < uli101r.length; i++) {
+        uli101r[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < ops235d.length; i++) {
+        ops235d[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < elms.length; i++) {
+        elms[i].style.backgroundColor = color;
+    }
+}
+
+function unHighlight() {
+    for(var i = 0; i < uli101q.length; i++) {
+        uli101q[i].style.backgroundColor = "#FFFAF3";
+    }
+    for(var i = 0; i < uli101r.length; i++) {
+        uli101r[i].style.backgroundColor = "#FCFFF5";
+    }
+    for(var i = 0; i < ops235d.length; i++) {
+        ops235d[i].style.backgroundColor = "#F8FFFF";
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].style.backgroundColor = "#FFF6F6";
+    }
+}
+
+window.onload = function() {
+    for(var i = 0; i < uli101q.length; i++) {
+        uli101q[i].onmouseover = function() {
+            highlight("#FFF4E4", uli101q);
+        };
+        uli101q[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < uli101r.length; i++) {
+        uli101r[i].onmouseover = function() {
+            highlight("#E7FFE7", uli101r);
+        };
+        uli101r[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < ops235d.length; i++) {
+        ops235d[i].onmouseover = function() {
+            highlight("#F0FAFF", ops235d);
+        };
+        ops235d[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].onmouseover = function() {
+            highlight("#FFE7E7", office);
+        };
+        office[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+}
+</script>
+<h1>Christopher Markieta's Timetable</h1>
+<h2>Winter 2017</h2>
+<table class="ui definition selectable celled unstackable table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="time">8:00 AM</td>
+      <td></td>
+      <td></td>
+      <td class="ops235d">OPS235D<br>T4042</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">9:50 AM</td>
+      <td class="uli101q">ULI101Q<br>T3073</td>
+      <td></td>
+      <td class="office">Office<br>T2091</td>
+      <td class="uli101q">ULI101Q<br>S2123</td>
+      <td class="uli101r">ULI101R<br>T3073</td>
+    </tr>
+    <tr>
+      <td class="time">11:40 AM</td>
+      <td class="uli101r">ULI101R<br>T3073</td>
+      <td></td>
+      <td></td>
+      <td class="office">Office<br>T2091</td>
+      <td class="office">Office<br>T2091</td>
+    </tr>
+    <tr>
+      <td class="time">1:30 PM</td>
+      <td class="ops235d">OPS235<br>T4042</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">3:15 PM</td>
+      <td><br><br></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="office message">Do not expect me to be in my office unless you <b>schedule an appointment with me.</b> If you need to speak with me in private please contact me <a href="mailto:christopher.markieta@senecacollege.ca">via email</a> or before/after class.</p>
