@@ -4,7 +4,7 @@ h1, h2 {
 }
 
 table {
-  width: 50em !important;
+  max-width: 50em;
   margin: 1em auto !important;
 }
 
@@ -37,7 +37,6 @@ td, th {
 }
 
 .message {
-  border: ;
   border-radius: .28571429rem;
   max-width: 47em;
   margin: auto;
@@ -64,7 +63,6 @@ td, th {
 
   table {
     font-size: 3.8vw !important;
-    width: 50vw !important;
   }
 
   th, td {
@@ -73,10 +71,7 @@ td, th {
   }
 
   .message {
-    font-size: 4vw;
-    width: 87vw !important;
-    padding: 4vw !important;
-    -webkit-margin-before: 0 !important;
-    -webkit-margin-after: 0 !important;
+    font-size: 3.8vw;
+    padding: 4vw;
   }
 }
