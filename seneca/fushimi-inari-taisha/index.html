@@ -75,7 +75,18 @@
         </div>
     </div>
     <script src="../../js/reveal.js"></script>
+    <script src="../../js/head.min.js"></script>
     <script>
-        Reveal.initialize();
+        Reveal.initialize({
+            dependencies: [
+                { src: '../../js/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
+    ],
+    audio: {
+        prefix: '../../audio/fushimi-inari-taisha/',
+        suffix: '.mp3',
+        advance: 0,
+        autoplay: true
+    },
+});
     </script>
 </body>
