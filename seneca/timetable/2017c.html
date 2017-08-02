@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<title>Timetable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/table.min.css">
+<link rel="stylesheet" href="../../css/timetable.css">
+<script>
+var section1 = document.getElementsByClassName("section1");
+var section2 = document.getElementsByClassName("section2");
+var section3 = document.getElementsByClassName("section3");
+var office = document.getElementsByClassName("office");
+
+function highlight(color, elms) {
+    for(var i = 0; i < section1.length; i++) {
+        section1[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < section2.length; i++) {
+        section2[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < section3.length; i++) {
+        section3[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].style.backgroundColor = "#F9FAFB";
+    }
+    for(var i = 0; i < elms.length; i++) {
+        elms[i].style.backgroundColor = color;
+    }
+}
+
+function unHighlight() {
+    for(var i = 0; i < section1.length; i++) {
+        section1[i].style.backgroundColor = "#FFFAF3";
+    }
+    for(var i = 0; i < section2.length; i++) {
+        section2[i].style.backgroundColor = "#FCFFF5";
+    }
+    for(var i = 0; i < section3.length; i++) {
+        section3[i].style.backgroundColor = "#F8FFFF";
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].style.backgroundColor = "#FFF6F6";
+    }
+}
+
+window.onload = function() {
+    for(var i = 0; i < section1.length; i++) {
+        section1[i].onmouseover = function() {
+            highlight("#FFF4E4", section1);
+        };
+        section1[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < section2.length; i++) {
+        section2[i].onmouseover = function() {
+            highlight("#E7FFE7", section2);
+        };
+        section2[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < section3.length; i++) {
+        section3[i].onmouseover = function() {
+            highlight("#F0FAFF", section3);
+        };
+        section3[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+    for(var i = 0; i < office.length; i++) {
+        office[i].onmouseover = function() {
+            highlight("#FFE7E7", office);
+        };
+        office[i].onmouseout = function() {
+            unHighlight();
+        };
+    }
+}
+</script>
+<h1>Christopher Markieta's Timetable</h1>
+<h2>Fall 2017</h2>
+<table class="ui definition selectable celled unstackable table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="time">8:00 AM</td>
+      <td></td>
+      <td></td>
+      <td class="section1">ULI101R<br>DB4042</td>
+      <td class="section3">ULI101U<br>DB4042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">9:50 AM</td>
+      <td class="section1">ULI101R<br>DB4042</td>
+      <td></td>
+      <td></td>
+      <td class="section2">ULI101S<br>DB4042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">11:40 AM</td>
+      <td class="section2">ULI101S<br>DB4046</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">1:30 PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="time">3:20 PM</td>
+      <td class="section3">ULI101U<br>DB4046</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="office message">Do not expect me to be in my office unless you <b>schedule an appointment with me.</b> If you need to speak with me in private please contact me <a href="mailto:christopher.markieta@senecacollege.ca">via email</a> or before/after class.</p>
