@@ -107,7 +107,15 @@ a span {
 }
 
 .test {
+	color:#55608f;
+}
+
+.test span {
 	background: #fff;
+}
+
+.test span::before {
+	color: #fff;
 }
 
 a span::before {
