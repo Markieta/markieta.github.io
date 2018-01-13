@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pure CSS Table Highlight (vertical & horizontal)</title>
+  <link rel="stylesheet" href="../../css/web222.css">
+  <script src="../../js/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="container">
+  <h1>WEB222 Weekly Schedule</h1>
+  <h2>Christopher Markieta</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Week</th>
+        <th>Topics</th>
+        <th>Material</th>
+        <th>Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="dates">
+          <b>Week 1</b><br>
+          Jan 17<br>
+          -<br>
+          Jan 19
+        </td>
+        <td>
+          <ul>
+            <li>Course introduction</li>
+            <li>Internet architecture</li>
+            <li>Introduction to JavaScript</li>
+          </ul>
+        </td>
+        <td>
+          <a href="lectures/WEB222-Welcome.pdf" target="_blank">
+            <span data-hover="Welcome">Welcome</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture1.pdf" target="_blank">
+            <span data-hover="Lecture 1">Lecture 1</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 2</b><br>
+          Jan 22<br>
+          -<br>
+          Jan 26
+        </td>
+        <td>
+          <ul>
+            <li>JavaScript functions</li>
+            <li>Built-in / global functions</li>
+            <li>JavaScript scope and closure</li>
+          </ul>
+        </td>
+        <td>
+          <a href="lectures/WEB222-Lecture2.pdf" target="_blank">
+            <span data-hover="Lecture 2">Lecture 2</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 3</b><br>
+          Jan 29<br>
+          -<br>
+          Feb 2
+        </td>
+        <td>
+          <ul>
+            <li>Built-in objects</li>
+            <li>Strings</li>
+            <li>Arrays</li>
+            <li>Regex</li>
+          </ul>
+        </td>
+        <td>
+          <a href="lectures/WEB222-Lecture3.pdf" target="_blank">
+            <span data-hover="Lecture 3">Lecture 3</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 4</b><br>
+          Feb 5<br>
+          -<br>
+          Feb 9
+        </td>
+        <td>
+          <ul>
+            <li>Built-in Objects: Date, Math</li>
+            <li>User-defined objects</li>
+            <li>Prototypal inheritance</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 1">Test 1</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture4.pdf" target="_blank">
+            <span data-hover="Lecture 4">Lecture 4</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 5</b><br>
+          Feb 12<br>
+          -<br>
+          Feb 16
+        </td>
+        <td>
+          <ul>
+            <li>Introduction to HTML</li>
+            <li>Document structure/overview</li>
+            <li>HTML5 structural elements</li>
+            <li>Important HTML elements</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 2">Test 2</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture5.pdf" target="_blank">
+            <span data-hover="Lecture 5">Lecture 5</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 6</b><br>
+          Feb 20<br>
+          -<br>
+          Feb 23<br>
+          <span style="color:#5f2c82">
+            (Holiday:<br>
+            Feb 19)
+          </span>
+        </td>
+        <td>
+          <ul>
+            <li>HTML lists, tables</li>
+            <li>Image &amp; figure elements</li>
+            <li>Multimedia - audio and video</li>
+            <li>Doctype and HTML validation</li>
+            <li>Using JavaScript in HTML</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 3">Test 3</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture6.pdf" target="_blank">
+            <span data-hover="Lecture 6">Lecture 6</span>
+          </a>
+        </td>
+      </tr>
+      <tr id="studyweek">
+        <td class="dates">
+          Feb 26<br>
+          -<br>
+          Mar 2
+        </td>
+        <td colspan="4">Study Week</td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 7</b><br>
+          Mar 5<br>
+          -<br>
+          Mar 9
+        </td>
+        <td>
+          <ul>
+            <li>Document Object Model (DOM)</li>
+            <li>DOM Tree and Node</li>
+            <li>DOM Events</li>
+          </ul>
+        </td>
+        <td>
+          <a href="lectures/WEB222-Lecture7.pdf" target="_blank">
+            <span data-hover="Lecture 7">Lecture 7</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 8</b><br>
+          Mar 12<br>
+          -<br>
+          Mar 16
+        </td>
+        <td>
+          <ul>
+            <li>Introduction to CSS</li>
+            <li>Fonts, lists, tables, links</li>
+            <li>Updating CSS using the DOM</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 4">Test 4</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture8.pdf" target="_blank">
+            <span data-hover="Lecture 8">Lecture 8</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 9</b><br>
+          Mar 19<br>
+          -<br>
+          Mar 23
+        </td>
+        <td>
+          <ul>
+            <li>CSS box model</li>
+            <li>CSS3 backgrounds &amp; effects</li>
+            <li>Display / positioning with CSS</li>
+            <li>HTML5 structural elements</li>
+            <li>Navigation / menus</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 5">Test 5</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture9.pdf" target="_blank">
+            <span data-hover="Lecture 9">Lecture 9</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 10</b><br>
+          Mar 26<br>
+          -<br>
+          Mar 29<br>
+          <span style="color:#5f2c82">(Holiday:<br>
+          Mar 30)</span>
+        </td>
+        <td>
+          <ul>
+            <li>Introduction to forms</li>
+            <li>Form Elements (controls)</li>
+            <li>&lt;input&gt; tag</li>
+            <li>Labels &amp; grouping fields</li>
+            <li>Styling forms using CSS</li>
+          </ul>
+        </td>
+        <td>
+            <a href="lectures/WEB222-Lecture10.pdf" target="_blank">
+              <span data-hover="Lecture 10">Lecture 10</span>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 11</b><br>
+          Apr 2<br>
+          -<br>
+          Apr 6
+        </td>
+        <td>
+          <ul>
+            <li>Client-side validation</li>
+            <li>HTML5 features</li>
+            <li>JavaScript for text fields</li>
+            <li>Validating selection</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 6">Test 6</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture11.pdf" target="_blank">
+            <span data-hover="Lecture 11">Lecture 11</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 12</b><br>
+          Apr 9<br>
+          -<br>
+          Apr 13
+        </td>
+        <td>
+          <ul>
+            <li>Introduction to AJAX</li>
+            <li>Introduction to JSON</li>
+            <li>Updating the DOM</li>
+          </ul>
+        </td>
+        <td>
+          <a href="https://my.senecacollege.ca/" target="_blank">
+            <span data-hover="Test 7">Test 7</span>
+          </a><br>
+          <a href="lectures/WEB222-Lecture12.pdf" target="_blank">
+            <span data-hover="Lecture 12">Lecture 12</span>
+          </a>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="dates">
+          <b>Week 13</b><br>
+          Apr 16<br>
+          -<br>
+          Apr 20
+        </td>
+        <td>
+          <ul>
+            <li>Course Review</li>
+            <li>Final Test</li>
+          </ul>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
