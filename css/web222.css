@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-	width: 800px;
+	width: 820px;
 	margin: auto;
 }
 
@@ -93,7 +93,7 @@ tbody td:hover:before {
 	position: relative;
 	display: inline-block;
 	padding: 0 14px;
-	width: 7em;
+	width: 7.5em;
 	background: #55608f;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
