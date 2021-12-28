@@ -66,10 +66,6 @@ a:active, a:focus, a:hover, .btn.focus, .btn:focus, .btn:hover {
   margin: 0 auto;
 }
 
-section:nth-child(even) {
-  background: #20B2AA;
-}
-
 #education {
   color: white;
   font-size: 1.5em;
