@@ -1,17 +1,33 @@
 @import url(navbar.css);
 
-#footer-home {
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
   background: #242729;
 }
 
+/*#footer-home {
+  background: #242729;
+}*/
+
 #header-home {
-  background: #20B2AA;
+/*  background: #20B2AA; */
   margin: 0;
-  padding: 6em 0;
+  padding: 1em 0;
   border-bottom: 0;
 }
 
 #header-name {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 4em;
   color: #FFF;
   margin: 0;
@@ -68,7 +84,7 @@ section:nth-child(even) {
 /* Phones and Tablets */
 @media screen and (max-width: 800px) {
   #header-home {
-    padding: 16vw 0;
+    padding: 2vw 0;
   }
 
   #header-name {
