@@ -1,11 +1,15 @@
 @import url(navbar.css);
 
-#footer-home {
+body {
   background: #242729;
 }
 
+/*#footer-home {
+  background: #242729;
+}*/
+
 #header-home {
-  background: #20B2AA;
+/*  background: #20B2AA; */
   margin: 0;
   padding: 6em 0;
   border-bottom: 0;
