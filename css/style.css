@@ -100,7 +100,7 @@ section:nth-child(even) {
   }
 
   #youtube {
-    width: 100%;
+    width: 100vw;
     height: 56.25vw;
   }
 
